@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма по макету №1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="conteiner">
+    <form class="conteiner-form form" action="#">
+      <button class="form__button button-form__close"></button>
+      <h2 class="form__title form-title">Подключить мою страну</h2>
+      <div class="form__item">
+        <p class="form__subtitle">Выберите страну</p>
+        <select class="form-input form-select" tabindex="1" name="country">
+          <option selected disabled>Выберите страну</option>
+          <option value="Russia">Russia</option>
+          <option value="Belarus">Belarus</option>
+          <option value="Germany">Germany</option>
+          <option value="Sweden">Sweden</option>
+        </select>
+      </div>
+      <div class="form__item">
+        <p class="form__subtitle">Имя</p>
+        <input
+          class="form-input"
+          tabindex="2"
+          type="text"
+          name="username"
+          value=""
+          placeholder="Напишите свое имя "
+        />
+      </div>
+      <div class="form__item">
+        <p class="form__subtitle">Email</p>
+        <input
+          tabindex="3"
+          name="email"
+          class="form-input"
+          type="email"
+          value=""
+          placeholder="Напишите свой email"
+        />
+      </div>
+      <div class="form-button">
+        <button class="button">Отправить заявку</button>
+      </div>
+    </form>
+  </body>
+</html>

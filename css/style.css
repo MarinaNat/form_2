@@ -1,0 +1,158 @@
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: #1e1e1e;
+	margin: 20px;
+}
+
+input,
+textarea {
+	border: none;
+}
+
+.conteiner-form {
+	background-color: #fff;
+	color: #6f767e;
+	display: flex;
+	flex-direction: column;
+	margin: 50px auto;
+	justify-content: center;
+	align-items: stretch;
+	max-width: 600px;
+	border-radius: 16px;
+	padding: 64px 80px;
+	box-sizing: border-box;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.form {
+	display: flex;
+	width: 100%;
+	gap: 32px;
+	position: relative;
+}
+
+.button-form__close {
+	position: absolute;
+	top: 29px;
+	right: 29px;
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	background-image: url(./img/X.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	background-color: inherit;
+	border: none;
+	padding: 0;
+}
+
+.form-title {
+	text-align: center;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 40px;
+	color: #000;
+	margin: 0;
+}
+
+.form__item {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.form__subtitle {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0;
+}
+
+.form-input {
+	/* width: 100%; */
+	background: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	padding: 12px 24px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 32px;
+	color: #6f767e;
+}
+
+.form-phone {
+	display: flex;
+	/* width: 100%; */
+	background: #ffffff;
+	border: 1px solid #cccbdb;
+	border-radius: 8px;
+	padding: 9px 16px;
+	margin-bottom: 24px;
+}
+
+.form-select {
+	height: 56px;
+	/* border: none; */
+}
+
+.form-button {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.button {
+	background: #3e8bf3;
+	border-radius: 8px;
+	color: #fff;
+	border: none;
+	padding: 12px 24px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 32px;
+}
+
+@media (max-width: 560px) {
+	.form {
+		gap: 15px;
+	}
+
+	.form-title {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.form__subtitle {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.form-input {
+		padding: 6px 4px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 32px;
+		color: #6f767e;
+	}
+
+	.form-select {
+		height: 44px;
+	}
+
+	.form-button {
+		display: flex;
+		align-items: stretch;
+		justify-content: stretch;
+	}
+
+	.button {
+		width: 100%;
+		padding: 12px 10px;
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
